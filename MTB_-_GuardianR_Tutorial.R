@@ -65,8 +65,8 @@ barplot(as.numeric(as.character(results$wordcount, results$sectionName)),  horiz
 
 # exploratory plot - comparison between sister papers
 par(mfrow=c(1,2))
-plot(as.numeric(as.character(results$wordcount))~results$publication, col="blue",xlab="Sister Papers", ylab="Article Word Count", main="Word Count per Sister Papers")
-plot(table(results$publication), main="Number of Articles per Sister Papers", ylab="")
+plot(as.numeric(as.character(results$wordcount))~results$publication, col="blue",xlab="Sister Newspaper", ylab="Article Word Count", main="Word Count per Sister Newspaper")
+plot(table(results$publication), main="Number of Articles per Sister Newspaper", ylab="")
 
 # exploratory plot - time series
 # install.packages("ggplot2")
@@ -121,5 +121,5 @@ plot(results$webPublicationDate, results$wordcount)
 # check summary of results
 summary(results)
 
-# cite source accordingly to avoid issues with Guardian copyright 
+# package citaton
 citation("GuardianR")
