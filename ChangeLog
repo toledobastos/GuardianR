@@ -23,6 +23,6 @@
    - cacert.pem now downloads (when needed) using HTTPS
 2016-09-16 - version 0.7:
    - Declared dependency R >= 3.2.0
-   - Fixed bug the returned only the second page of a search (Mark Johnman's contribution)
+   - Fixed bug that returned only the second page of a search (Mark Johnman's contribution)
    - Added section argument to get_guardian to allow searching articles within sections (Mark Johnman's contribution)
    - Changed page-size from 50 to 100 to speed up API response (Mark Johnman's contribution)

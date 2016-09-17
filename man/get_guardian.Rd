@@ -16,10 +16,10 @@ get_guardian(keywords, section, format, from.date, to.date, api.key)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{keywords}{
-Keyword to search Guardian API. Exemple: "Thatcher". For multiple keywords use "Margaret+Hilda+Thatcher".
+Keyword to search Guardian API. Example: "Thatcher". For multiple keywords use "Margaret+Hilda+Thatcher".
 }
   \item{section}{
-Specifies news sections to narrow the query (articles from other news desks will be filtered out). It doesn not accept blank spaces, so use "word" if querying for articles in the "World news" section (and so on). It defaults to NULL in which case API search is performed across all sections.
+Specifies news sections to narrow the query (articles from other news desks will be filtered out). It doesn not accept blank spaces, so use "world" if querying for articles in the "World news" section (and so on). It defaults to NULL in which case API search is performed across all sections.
 }
   \item{format}{
 Specifies JSON or XML format. It defaults to JSON.
