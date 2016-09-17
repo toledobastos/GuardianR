@@ -1,0 +1,14 @@
+Package: GuardianR
+Type: Package
+Title: The Guardian API Wrapper
+Version: 0.7
+Date: 2016-09-16
+Authors@R: c(person("Marco", "Bastos", email = "marco@toledobastos.com", role = c("aut", "cre")),
+	person("Cornelius", "Puschmann", email = "cornelius.puschmann@hiig.de", role = "aut"), 
+	person("Mark", "Johnman", email = "mark.johnman@student.bond.edu.au", role = "ctb"))
+Maintainer: Marco Bastos <marco@toledobastos.com>
+Depends: R (>= 3.2.0)
+Imports: RCurl, RJSONIO
+Description: Provides an interface to the Open Platform's Content API of the Guardian Media Group. It retrieves content from news outlets The Observer, The Guardian, and guardian.co.uk from 1999 to current day.
+License: GPL (>= 2)
+Encoding: UTF-8

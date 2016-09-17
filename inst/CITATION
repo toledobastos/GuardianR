@@ -1,0 +1,11 @@
+citHeader("To cite 'GuardianR' in publications use:")
+
+citEntry(entry="article",
+	 title="Shares, Pins, and Tweets: News Readership from Daily Papers to Social Media",
+         author = "Marco T. Bastos",
+	 journal="Journalism Studies",
+         publisher = "Routledge",
+         year="2014",
+         issn = "1469-9699",
+         textVersion = "Bastos, M. T. Shares, Pins, and Tweets: News readership from daily papers to social media. Journalism Studies, 2014."
+ )

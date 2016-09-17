@@ -1,0 +1,28 @@
+2013-05-07 - version 0.1:
+   - Release
+2014-02-17 - version 0.2:
+   - Fixed the error caused by empty replies from Guardian API
+   - Excluded duplicate entries from get_guardian and get_guardian_full
+   - Revised documentation to explain search for exact keywords
+   - Added BibTeX citation file 
+   - Packages RCurl and RJSONIO are now on "Imports" instead of "Depends"
+   - Fixed truncated lines in the PDF manual
+2014-02-20 - version 0.3:
+   - Removed the API-key provided for function get_guardian_full. Users should request an API-key at http://guardian.mashery.com/
+2014-06-13 - version 0.4:
+   - Function get_guardian_full declared in NAMESPACE. Users still need to request an API-key at http://guardian.mashery.com/
+   - Functions get_json and parse_json_to_df are also declared in NAMESPACE
+2014-09-16 - version 0.5:
+   - The wrapper now complies with Guardian Content API v2
+   - Search without an API-key is no longer supported in the new API. The functions get_guardian_full and get_guardian were merged into get_guardian, which now returns the full text
+   - Function get_guardian requires an API key due to functional requirements of Guardian Content API v2
+   - Guardian Content API v2 is faster, but implements a limit of 12 Calls per second and 5,000 calls per day
+2016-03-11 - version 0.6:
+   - Completed migration from API 2.0 beta to content.guardianapis.com
+   - Added warning for requests over extended periods of time. Users should consider splitting requests in weekly or monthly chunks
+   - cacert.pem now downloads (when needed) using HTTPS
+2016-09-16 - version 0.7:
+   - Declared dependency R >= 3.2.0
+   - Fixed bug the returned only the second page of a search (Mark Johnman's contribution)
+   - Added section argument to get_guardian to allow searching articles within sections (Mark Johnman's contribution)
+   - Changed page-size from 50 to 100 to speed up API response (Mark Johnman's contribution)
