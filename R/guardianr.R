@@ -25,7 +25,7 @@ api.responses <- NULL
 while (this.page <= pages) {
     if(is.null(section)) {
         request <- paste("http://content.guardianapis.com/search?q=", keywords, "&from-date=", from.date, "&to-date=", to.date, 
-                         "&format=", format, "&show-fields=all&page=", this.page, "&pageSize=", page.size, "&api-key=", api.key, sep="")
+                         "&format=", format, "&show-fields=all&page=", this.page, "&page-size=", page.size, "&api-key=", api.key, sep="")
     } else {
         request <- paste("http://content.guardianapis.com/search?q=", keywords, "&section=", section, "&from-date=", from.date, "&to-date=", to.date, 
                          "&format=", format, "&show-fields=all&page=", this.page, 
