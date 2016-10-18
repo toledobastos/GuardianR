@@ -21,12 +21,12 @@ Keyword to search Guardian API. Example: "Thatcher". For multiple keywords use "
   \item{section}{
 Specifies news sections to narrow the query (articles from other news desks will be filtered out). It doesn not accept blank spaces, so use "world" if querying for articles in the section "world news" (and so on). It defaults to NULL in which case the API request is performed across all sections. For referece, these are the 20 most common news sections:
 1	entertainment
-2	sports
+2	sport
 3	world
 4	opinion
 5	economy
 6	national
-7	arts
+7	artanddesign
 8	politics
 9	environment
 10	lifestyle
@@ -35,11 +35,17 @@ Specifies news sections to narrow the query (articles from other news desks will
 13	technology
 14	science
 15	fashion
-16	news
-17	local news
+16	culture
+17	society
 18	tourism
 19	health
 20	cars
+21  uk-news
+22  business
+23  football
+24  stage
+24  money
+25  commentisfree
 }
   \item{format}{
 Specifies JSON or XML format. It defaults to JSON.

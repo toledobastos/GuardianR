@@ -1,4 +1,4 @@
-### Guardian API Wrapper v.07
+### Guardian API Wrapper v.08
 ### by M.T. Bastos & C. Puschmann
 ### contributions by Mark Johnman
 # 
@@ -14,8 +14,8 @@ page.size <- 100
 this.page <- 1
 pages <- 1
 
-if(as.Date(as.character(to.date))-as.Date(as.character(from.date))>28) {
-    warning("The requested period is potentially too long. To avoid errors make multiple request (e.g. weekly chunks)")
+if(as.Date(as.character(to.date))-as.Date(as.character(from.date))>31) {
+    warning("The requested period is potentially too long. To avoid errors make multiple weekly or monthly requests")
 }
 
 # prepare list for storing api responses
@@ -37,6 +37,7 @@ while (this.page <= pages) {
     json <- fromJSON(json, simplify=FALSE)
     this.api.response <- json$response
     stopifnot(!is.null(this.api.response))
+    #if(this.page==1) { pages.total <<- this.api.response$pages }
     if(this.api.response$total==0){
         print(paste("No matches were found in the Guardian database for keyword '", keywords, "'", sep=""))
         this.page <- this.page + 1
@@ -93,7 +94,8 @@ api.df = data.frame(
     body=NULL)
 
 # determine number of pages
-pages <- try(seq(from=9, to=length(api.responses), by=9), silent=T)
+pages <- which(names(api.responses)=="results")
+#pages <- pages.total
 
 for (i in pages)
 {
