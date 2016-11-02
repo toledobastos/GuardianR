@@ -27,5 +27,5 @@
    - Added section argument to get_guardian to allow searching articles within sections
    - Changed page-size from 50 to 100 to speed up API response
 2016-10-18 - version 0.8:
-   - Fixed pagination to match changes introduced to Guardian API 
-   
+   - Fixed pagination to match changes introduced to Guardian API
+   - 
