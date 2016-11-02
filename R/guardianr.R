@@ -1,4 +1,4 @@
-### Guardian API Wrapper v.08
+### Guardian API Wrapper v.09
 ### by M.T. Bastos & C. Puschmann
 ### contributions by Mark Johnman
 # 
@@ -15,7 +15,7 @@ this.page <- 1
 pages <- 1
 
 if(as.Date(as.character(to.date))-as.Date(as.character(from.date))>31) {
-    warning("The requested period is potentially too long. To avoid errors make multiple weekly or monthly requests")
+    warning("The requested period is too long. Make weekly or monthly requests to avoid API interruptions")
 }
 
 # prepare list for storing api responses

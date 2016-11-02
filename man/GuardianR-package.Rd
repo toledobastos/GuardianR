@@ -12,8 +12,8 @@ The package provides an interface to the Open Platform's Content API of the Guar
 \tabular{ll}{
 Package: \tab GuardianR\cr
 Type: \tab Package\cr
-Version: \tab 0.8\cr
-Date: \tab 2016-10-18\cr
+Version: \tab 0.9\cr
+Date: \tab 2018-05-30\cr
 License: \tab GPL (>= 2)\cr
 }
 The results of keyword search include news articles that match the search terms and were published after 1999. Function get_guardian accepts date intervals with multiple keywords (format: "keyword1+keyword2") and returns a data frame. Rows refer to news articles and columns to the news item's data. The resulting data frame includes the following 27 columns:
@@ -83,5 +83,5 @@ Maintainer:
 Marco Bastos <marco@toledobastos.com>
 }
 \references{
-More information on Content API is available on Guardian Item Reference Guide (http://www.guardian.co.uk/open-platform/content-api-item-reference-guide) and the Getting started guide (http://www.guardian.co.uk/open-platform/getting-started).
+More information on Content API is available on Guardian Item Reference Guide (http://www.guardian.co.uk/open-platform/content-api-item-reference-guide) and the sign up for an API key page (https://open-platform.theguardian.com/access/).
 }

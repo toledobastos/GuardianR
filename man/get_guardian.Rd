@@ -101,7 +101,7 @@ results <- get_guardian("islamic+state",
 	section="world",
 	from.date="2014-09-16", 
 	to.date="2014-09-16", 
-	api.key="3xzg2fk53jcdgaj5tbwqqhcz")
+	api.key="212d23d3-c7b2-4273-8f1b-289a0803ca4b")
 ## End(Not run)
 }
 \keyword{ IO }

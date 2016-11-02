@@ -28,4 +28,5 @@
    - Changed page-size from 50 to 100 to speed up API response
 2016-10-18 - version 0.8:
    - Fixed pagination to match changes introduced to Guardian API 
-   
+2018-05-30 - version 0.9:
+   - Updated Guardian API key for testing
